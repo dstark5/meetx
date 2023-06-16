@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meetx</title>
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>const roomid="<%=roomid%>"</script>
+	<script defer src="peerjs.js"></script>
+	<script defer src="/socket.io/socket.io.js"></script>
+	<script defer src="bundle.js"></script>
+</head>
+<body>
+	<div id="video">
+		<div id="container">
+			<div id="videoGrid" class="videoGrid">
+			</div>
+		</div>
+		<div id="control">
+			<button class="btntoogle btnx call"><img id="endCallimg" src="/icons/endCall.png"></button>
+			<button class="btntoogle btnx video"><img id="videoimg" src="/icons/video-on.png"></button>
+			<button class="btntoogle btnx audio"><img id="audimg" src="/icons/mic.png"></button>
+			<button class="popup btnx"><img src="/icons/chat.png"></button></button>
+			<button class="popup btnx"><img src="/icons/present.png"></button></button>
+			</div>
+			<div class="modal">
+				<div class="modalContent">
+					<span class="close">&times;</span>
+					<div id="chat"></div>
+					<form>
+						<input type="text" id="msg" name="message" placeholder="type here">
+						<button type="submit" id="sendMsgbtn" class="btnx"><img src="/icons/send.png"></button>
+					</form>
+				</div>
+			</div>
+	</div>
+	<div id="onerror">
+		<div class="card">
+			<video class="error" preload="none" poster="/icons/error.jpg"></video>
+				<div id="btndiv">
+					<button class="btnx viderr"><img class="viderr" src="/icons/video-error.png"></button>
+					<button class="btnx auderr"><img class="auderr" src="/icons/audio-error.png"></button>
+				</div>
+					<h5 id="warning">camera and mic permissions are needed to join meet</h5>
+					<input type="text" id="usrName" required name="userName" placeholder="Enter UserName">
+					<button id="btnjoin" class="btn btn-primary">join</button>
+		</div>
+	</div>
+</body>
+</html>

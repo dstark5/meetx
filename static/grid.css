@@ -1,0 +1,31 @@
+#container{
+	height:91vh;
+	display: flex;
+}
+
+.videoGrid{
+	display: flex;
+	height: 89vh;
+	width:100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.videoContainer{
+	height:125px;
+	width: 125px;
+	border-radius:15px;
+	margin: 0 auto;
+	margin:15px;
+	background-color:transparent;
+}
+
+video{
+	height:100%;
+	width: 100%;
+	object-fit: cover !important;
+	border-radius: 15px;
+}

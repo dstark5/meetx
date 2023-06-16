@@ -1,0 +1,35 @@
+.card{
+	margin:25px;
+	border:none;
+}
+
+.col-md-6{
+	padding:25px;
+}
+.h1{
+	padding:5px;
+}
+.cardx{
+	background-color:#F7F6F2;
+}
+.cardz{
+	background-color:#FFE8E8;
+}
+.cardColor{
+	background-color:white;
+}
+body{
+	background-color:#F5F5F5;
+}
+h6{
+	color: white;
+}
+.brand{
+	font-weight:bolder;
+}
+.button{
+	text-decoration:none;
+}
+.btn{
+	margin:5px;
+}
